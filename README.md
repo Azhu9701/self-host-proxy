@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/huasanai/self-host-proxy?style=social)](https://github.com/huasanai/self-host-proxy)
 
+> 🚀 **GitHub 加速**：[ghproxy 镜像](https://ghproxy.com/https://github.com/Azhu9701/self-host-proxy) | [下载 ZIP](https://ghproxy.com/https://github.com/Azhu9701/self-host-proxy/archive/refs/heads/main.zip)
+
 ## ✨ 特点
 
 - 💰 **超低成本**：¥158/年，比商业 VPN 便宜一半
@@ -35,6 +37,8 @@
 > 🔗 RackNerd 购买时自动使用推荐链接，感谢支持！
 
 ## 🚀 快速开始
+
+> ⚡ **国内加速**：所有 GitHub 链接可用 `https://ghproxy.com/` 前缀加速，例：`curl https://ghproxy.com/https://raw.githubusercontent.com/...`
 
 ### 1. 买 VPS
 
