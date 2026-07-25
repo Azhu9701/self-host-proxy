@@ -1,0 +1,20 @@
+{
+  "log": {"loglevel": "warning"},
+  "inbounds": [{
+    "port": 443,
+    "protocol": "vless",
+    "settings": {
+      "clients": [{"id": "UUID_PLACEHOLDER", "flow": "xtls-rprx-vision", "email": "user@example.com"}],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "tls",
+      "tlsSettings": {
+        "certificates": [{"certificateFile": "/etc/xray-cert.pem", "keyFile": "/etc/xray-key.pem"}]
+      }
+    },
+    "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+  }],
+  "outbounds": [{"protocol": "freedom", "tag": "direct"}]
+}

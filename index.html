@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自建科学上网代理 - 全套开源方案 | ¥158/年</title>
+<meta name="description" content="超低成本的科学上网自建方案，VLESS + Hysteria 2 双协议，支持 Clash Verge Rev 客户端，一键部署，比商业VPN便宜一半。">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; }
+  .hero { background: linear-gradient(135deg, #161b22 0%, #0d1117 100%); padding: 80px 20px; text-align: center; border-bottom: 1px solid #21262d; }
+  .hero h1 { font-size: 2.5em; margin-bottom: 10px; background: linear-gradient(90deg, #58a6ff, #3fb950); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p { font-size: 1.2em; color: #8b949e; margin-bottom: 30px; }
+  .price { font-size: 3em; color: #3fb950; font-weight: bold; }
+  .price span { font-size: 0.4em; color: #8b949e; }
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+  .card { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 24px; margin: 20px 0; }
+  .card h2 { color: #58a6ff; margin-bottom: 12px; }
+  .card h3 { color: #c9d1d9; margin: 16px 0 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #21262d; }
+  th { background: #21262d; font-weight: 600; }
+  .cta { display: inline-block; padding: 14px 36px; background: #238636; color: white; text-decoration: none; border-radius: 6px; font-size: 1.1em; font-weight: 600; margin: 10px; transition: background 0.2s; }
+  .cta:hover { background: #2ea043; }
+  .cta-secondary { background: #21262d; border: 1px solid #30363d; }
+  .cta-secondary:hover { background: #30363d; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 20px 0; }
+  .feature { background: #0d1117; border: 1px solid #21262d; border-radius: 8px; padding: 20px; text-align: center; }
+  .feature .icon { font-size: 2em; margin-bottom: 8px; }
+  code { background: #21262d; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+  pre { background: #0d1117; border: 1px solid #21262d; border-radius: 6px; padding: 16px; overflow-x: auto; margin: 12px 0; }
+  footer { text-align: center; padding: 40px; color: #484f58; font-size: 0.9em; border-top: 1px solid #21262d; }
+  .note { background: #1f2937; border-left: 4px solid #58a6ff; padding: 12px 16px; border-radius: 4px; margin: 16px 0; }
+  a { color: #58a6ff; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🚀 自建科学上网代理</h1>
+  <p>开源 · 稳定 · 双协议冗余 · Clash 客户端</p>
+  <div class="price">¥158<span>/年</span></div>
+  <p style="color:#8b949e;margin-top:8px">比商业VPN便宜一半 · 月流量3TB</p>
+  <div style="margin-top:20px">
+    <a href="https://my.racknerd.com/aff.php?aff=20743" class="cta" target="_blank">🛒 买 VPS 开始</a>
+    <a href="https://github.com/huasanai/self-host-proxy" class="cta cta-secondary" target="_blank">📖 查看文档</a>
+  </div>
+</div>
+
+<div class="container">
+
+<h2>✨ 为什么选择自建？</h2>
+<div class="features">
+  <div class="feature">
+    <div class="icon">💰</div>
+    <strong>¥158/年</strong>
+    <p style="color:#8b949e;font-size:0.9em">商业VPN半价</p>
+  </div>
+  <div class="feature">
+    <div class="icon">⚡</div>
+    <strong>双协议</strong>
+    <p style="color:#8b949e;font-size:0.9em">VLESS + Hysteria2</p>
+  </div>
+  <div class="feature">
+    <div class="icon">🎯</div>
+    <strong>智能分流</strong>
+    <p style="color:#8b949e;font-size:0.9em">国内直连+国外代理</p>
+  </div>
+  <div class="feature">
+    <div class="icon">🔒</div>
+    <strong>完全自主</strong>
+    <p style="color:#8b949e;font-size:0.9em">无日志·不限设备</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>🛒 推荐 VPS</h2>
+  <table>
+    <tr><th>档次</th><th>推荐</th><th>年费</th><th>购买</th></tr>
+    <tr>
+      <td>🥇 性价比</td>
+      <td><strong>RackNerd</strong> 1C1G 3TB</td>
+      <td style="color:#3fb950">$21.99</td>
+      <td><a href="https://my.racknerd.com/aff.php?aff=20743" class="cta" style="padding:6px 16px;font-size:0.9em" target="_blank">立即购买</a></td>
+    </tr>
+    <tr>
+      <td>🥈 中国优化</td>
+      <td>HostDare CN2 GIA</td>
+      <td>$35.99</td>
+      <td><a href="https://hostdare.com" target="_blank">前往</a></td>
+    </tr>
+    <tr>
+      <td>🥉 顶级线路</td>
+      <td>DMIT CN2 GIA</td>
+      <td>$48.88</td>
+      <td><a href="https://www.dmit.io" target="_blank">前往</a></td>
+    </tr>
+  </table>
+  <div class="note">
+    🔗 通过上方链接购买 RackNerd，就是在支持这个开源项目！感谢 ❤️
+  </div>
+</div>
+
+<div class="card">
+  <h2>🚀 3 步上手</h2>
+  
+  <h3>① 买 VPS</h3>
+  <p>👉 <a href="https://my.racknerd.com/aff.php?aff=20743" target="_blank"><strong>RackNerd $21.99/年套餐</strong></a>，选 Los Angeles 机房，支持支付宝</p>
+
+  <h3>② 一键部署服务端</h3>
+  <pre><code>ssh root@你的VPS_IP
+
+# 装 Xray（VLESS + XTLS Vision + BBR 加速）
+bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install
+
+# 自签证书 + 写配置 → 启动！
+# 详细步骤见 GitHub README</code></pre>
+
+  <h3>③ 客户端连接</h3>
+  <p>下载 <a href="https://github.com/clash-verge-rev/clash-verge-rev/releases" target="_blank">Clash Verge Rev</a> → 导入配置 → 浏览器直接翻墙</p>
+</div>
+
+<div class="card">
+  <h2>📊 实测速度（中国移动 → 洛杉矶）</h2>
+  <table>
+    <tr><th>网站</th><th>VLESS</th><th>HY2</th></tr>
+    <tr><td>Google</td><td style="color:#3fb950">1.3s</td><td>1.5s</td></tr>
+    <tr><td>YouTube</td><td style="color:#3fb950">2.5s</td><td>3.0s</td></tr>
+    <tr><td>GitHub</td><td style="color:#3fb950">1.9s</td><td>3.4s</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>🤖 内置 AI 技能</h2>
+  <p>本项目同时是一个 <strong>ZCode Skill 文件</strong>，可直接被 AI 编程助手加载：</p>
+  <pre><code>/self-host-proxy 帮我搭个新节点</code></pre>
+  <p>AI 会按照本仓库的配置模板、故障排查流程，帮你自动配置好一切。</p>
+</div>
+
+</div>
+
+<footer>
+  <p>MIT License · <a href="https://github.com/huasanai/self-host-proxy">GitHub</a></p>
+  <p style="margin-top:8px">友情推荐：<a href="https://my.racknerd.com/aff.php?aff=20743" target="_blank">RackNerd 高性价比 VPS</a></p>
+</footer>
+
+</body>
+</html>
